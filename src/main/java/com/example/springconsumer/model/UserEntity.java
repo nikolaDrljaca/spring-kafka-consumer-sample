@@ -24,7 +24,8 @@ public class UserEntity {
 
     @Builder
     public UserEntity(String name, String email) {
-
+        this.email = email;
+        this.name = name;
     }
 
     @OneToMany(

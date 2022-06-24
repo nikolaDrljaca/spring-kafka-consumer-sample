@@ -21,7 +21,8 @@ public class MessageEntity {
 
     @Builder
     public MessageEntity(String content, UserEntity user) {
-
+        this.content = content;
+        this.user = user;
     }
 
     @ManyToOne
